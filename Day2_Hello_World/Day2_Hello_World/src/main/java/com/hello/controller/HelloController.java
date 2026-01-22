@@ -12,8 +12,8 @@ public class HelloController {
     }
 
 
-    // @GetMapping("/web/hello")
-    // public String webhello(){
-    //     return "hello";
-    // }
+    @GetMapping("/web/hello")
+    public String webhello(){
+        return "hello";
+    }
 }
