@@ -1,14 +1,19 @@
 package com.hello.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class HelloController {
     
+    // @GetMapping("/hello")
+    // public String hello(){
+    //     return "Hello World";
+    // }
 
-    @GetMapping("/hello")
-    public String hello(){
-        return "Hello World";
+
+    @GetMapping("/web/hello")
+    public String webhello(){
+        return "hello";
     }
 }
